@@ -7,13 +7,14 @@ namespace PharmacyServer
 {
     public class StockClass
     {
+        //there are the data types of stockclass
         private string itemName;
         private string itemFormula;
         private string itemType;
         private int  itemQuantity;
         private int itemPrice;
         private DateTime expiryDate;
-
+        //Here are the getter and setter of data types
         public string ItemName
         {
             get

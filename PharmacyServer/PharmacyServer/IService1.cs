@@ -6,16 +6,14 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 
-namespace PharmacyServer
+namespace WcfService1
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IService
+    public interface IService1
     {
         [OperationContract]
         void add(string name, string type, string formula, int price, int quantity, DateTime exp);
-        [OperationContract]
-        void delete_product(string name, string type);
         [OperationContract]
         string GetData(int value);
 

@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace PharmacyServer
+namespace WcfService1
 {
     public class StockClass
     {
-        //there are the data types of stockclass
         private string itemName;
         private string itemFormula;
-        private string itemType;
-        private int  itemQuantity;
+        private string itemtype;
+        private int itemQuantity;
         private int itemPrice;
-        private DateTime expiryDate;
-        //Here are the getter and setter of data types
+        private DateTime itemDate;
+
         public string ItemName
         {
             get
@@ -41,16 +40,16 @@ namespace PharmacyServer
             }
         }
 
-        public string ItemType
+        public string Itemtype
         {
             get
             {
-                return itemType;
+                return itemtype;
             }
 
             set
             {
-                itemType = value;
+                itemtype = value;
             }
         }
 
@@ -80,16 +79,16 @@ namespace PharmacyServer
             }
         }
 
-        public DateTime ExpiryDate
+        public DateTime ItemDate
         {
             get
             {
-                return expiryDate;
+                return itemDate;
             }
 
             set
             {
-                expiryDate = value;
+                itemDate = value;
             }
         }
     }

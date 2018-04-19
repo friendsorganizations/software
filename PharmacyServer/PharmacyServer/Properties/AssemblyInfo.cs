@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PharmacyServer")]
+[assembly: AssemblyTitle("WcfService1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PharmacyServer")]
+[assembly: AssemblyProduct("WcfService1")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a3e52558-c919-4da8-9ce7-004ec41c5bd5")]
+[assembly: Guid("f9321f83-262b-469a-9ac6-8d3d9ea1539b")]
 
 // Version information for an assembly consists of the following four values:
 //

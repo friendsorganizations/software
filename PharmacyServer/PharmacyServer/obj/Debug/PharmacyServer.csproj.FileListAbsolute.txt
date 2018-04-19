@@ -1,12 +1,6 @@
-C:\Users\NUMAN\Desktop\Pharmacy software\PharmacyServer\PharmacyServer\bin\PharmacyServer.dll.config
-C:\Users\NUMAN\Desktop\Pharmacy software\PharmacyServer\PharmacyServer\bin\PharmacyServer.dll
-C:\Users\NUMAN\Desktop\Pharmacy software\PharmacyServer\PharmacyServer\bin\PharmacyServer.pdb
-C:\Users\NUMAN\Desktop\Pharmacy software\PharmacyServer\PharmacyServer\obj\Debug\PharmacyServer.csprojResolveAssemblyReference.cache
-C:\Users\NUMAN\Desktop\Pharmacy software\PharmacyServer\PharmacyServer\obj\Debug\PharmacyServer.dll
-C:\Users\NUMAN\Desktop\Pharmacy software\PharmacyServer\PharmacyServer\obj\Debug\PharmacyServer.pdb
-E:\Pharmacy software\PharmacyServer\PharmacyServer\bin\PharmacyServer.dll.config
-E:\Pharmacy software\PharmacyServer\PharmacyServer\bin\PharmacyServer.dll
-E:\Pharmacy software\PharmacyServer\PharmacyServer\bin\PharmacyServer.pdb
-E:\Pharmacy software\PharmacyServer\PharmacyServer\obj\Debug\PharmacyServer.csprojResolveAssemblyReference.cache
-E:\Pharmacy software\PharmacyServer\PharmacyServer\obj\Debug\PharmacyServer.dll
-E:\Pharmacy software\PharmacyServer\PharmacyServer\obj\Debug\PharmacyServer.pdb
+C:\Users\shahzad\Desktop\WcfService1\WcfService1\bin\WcfService1.dll.config
+C:\Users\shahzad\Desktop\WcfService1\WcfService1\bin\WcfService1.dll
+C:\Users\shahzad\Desktop\WcfService1\WcfService1\bin\WcfService1.pdb
+C:\Users\shahzad\Desktop\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\shahzad\Desktop\WcfService1\WcfService1\obj\Debug\WcfService1.pdb
+C:\Users\shahzad\Desktop\WcfService1\WcfService1\obj\Debug\PharmacyServer.csprojResolveAssemblyReference.cache

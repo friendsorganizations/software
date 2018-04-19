@@ -10,20 +10,12 @@ namespace PharmacyServer
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IService1
+    public interface IService
     {
         [OperationContract]
-
-        void Register(string name, string password);
+        void add(string name, string type, string formula, int price, int quantity, DateTime exp);
         [OperationContract]
-
-        bool login(string name, string password);
-
-       [OperationContract]
-       bool resetPassword(string old_password, string new_password);
-        [OperationContract]
-        bool forgetPassword(string name, string new_password);
-
+        void delete_product(string name, string type);
         [OperationContract]
         string GetData(int value);
 

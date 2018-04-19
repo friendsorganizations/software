@@ -10,54 +10,33 @@ namespace PharmacyServer
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : IService1
+    public class Service1 : IService
     {
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
         }
-        public void Register(string name,string password)
+        public void add(string name, string type, string formula, int price, int quantity, DateTime exp)
         {
-            Admin.userName= name;
-            Admin.userPassword = password;
+            StockClass st = new StockClass();
+            st.ItemName = name;
+            st.ItemType = type;
+            st.ItemFormula = formula;
+            st.ItemPrice = price;
+            st.ItemQuantity = quantity;
+            st.ExpiryDate = exp;
+            StockDL.addProduct(st);
 
+            //throw new NotImplementedException();
         }
-      public bool login(string name,string password)
+        public void delete_product(string name, string type)
         {
-            bool is_val = false;
-          
-             if(name==Admin.userName && password==Admin.userPassword)
-            {
-                is_val = true;
+            StockClass st = new StockClass();
+            st.ItemName = name;
+            st.ItemType = type;
+            StockDL.deleteProduct(st);
 
-            }
-            return is_val;
-
-        }
-    public    bool resetPassword(string old_password,string new_password)
-        {
-            bool is_eq = false;
-            if (old_password==Admin.userPassword)
-            {
-                Admin.userPassword = new_password;
-                is_eq = true;
-
-            }
-            return is_eq;
-        
-        }
-     public   bool forgetPassword(string name, string new_password)
-        {
-            bool is_cor = false;
-            if (name == Admin.userName)
-            {
-                Admin.userPassword = new_password;
-                is_cor = true;
-            }
-
-            return is_cor;
-            
-
+            //throw new NotImplementedException();
         }
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
@@ -72,6 +51,6 @@ namespace PharmacyServer
             return composite;
         }
 
-        
+     
     }
 }

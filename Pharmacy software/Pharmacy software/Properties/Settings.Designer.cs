@@ -26,7 +26,7 @@ namespace Pharmacy_software.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:54431/Service1.svc")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:14244/Service1.svc")]
         public string Pharmacy_software_localhost_Service1 {
             get {
                 return ((string)(this["Pharmacy_software_localhost_Service1"]));

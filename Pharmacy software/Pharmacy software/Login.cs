@@ -26,36 +26,31 @@ namespace Pharmacy_software
         {
             stock k = new stock();
 
-            localhost.Service1 r = new localhost.Service1();
-         bool   is_valid = false;
-         bool   is_validresult = false;
-            r.login(textBox1.Text, textBox2.Text,out is_valid, out is_validresult);
-            //if (textBox1.Text == admin.username && textBox2.Text == admin.password)
+           // admin.username = "numan";
+            //admin.password = "456";
+            //if (textBox1.Text == "numan"  && textBox2.Text == admin.password)
             //{
-            if (is_valid) { 
-                MessageBox.Show("valid");
-                this.Hide();
+              this.Hide();
                 k.Show();
-                
-            }
-            else
-            {
-                MessageBox.Show("Invalid username or password");
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Invalid username or password");
+            //}
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            change_passwrd p = new change_passwrd();
-            p.Show();
-            this.Hide();
+            //change_passwrd p = new change_passwrd();
+            //p.Show();
+            //this.Hide();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Forget_passwrd g = new Forget_passwrd();
-            g.Show();
-            this.Hide();
+            //Forget_passwrd g = new Forget_passwrd();
+            //g.Show();
+            //this.Hide();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -90,19 +85,6 @@ namespace Pharmacy_software
         {
             label4.Text = DateTime.Now.ToLongDateString();
             label3.Text = DateTime.Now.ToLongTimeString();
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-         
-        }
-
-        private void lnklblNewuser(object sender, EventArgs e)
-        {
-            Register r = new Register();
-            this.Hide();
-            r.Show();
-
         }
     }
 }

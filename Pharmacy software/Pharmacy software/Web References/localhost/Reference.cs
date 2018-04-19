@@ -26,16 +26,12 @@ namespace Pharmacy_software.localhost {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService1", Namespace="http://tempuri.org/")]
+    [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService", Namespace="http://tempuri.org/")]
     public partial class Service1 : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
-        private System.Threading.SendOrPostCallback RegisterOperationCompleted;
+        private System.Threading.SendOrPostCallback addOperationCompleted;
         
-        private System.Threading.SendOrPostCallback loginOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback resetPasswordOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback forgetPasswordOperationCompleted;
+        private System.Threading.SendOrPostCallback delete_productOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetDataOperationCompleted;
         
@@ -68,7 +64,17 @@ namespace Pharmacy_software.localhost {
                 base.Url = value;
             }
         }
-        
+
+        internal void add(string text1, string text2, string text3, int v1, bool prc_spec, int v2, DateTime dateTime, bool exp_spec)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void add()
+        {
+            throw new NotImplementedException();
+        }
+
         public new bool UseDefaultCredentials {
             get {
                 return base.UseDefaultCredentials;
@@ -80,16 +86,10 @@ namespace Pharmacy_software.localhost {
         }
         
         /// <remarks/>
-        public event RegisterCompletedEventHandler RegisterCompleted;
+        public event addCompletedEventHandler addCompleted;
         
         /// <remarks/>
-        public event loginCompletedEventHandler loginCompleted;
-        
-        /// <remarks/>
-        public event resetPasswordCompletedEventHandler resetPasswordCompleted;
-        
-        /// <remarks/>
-        public event forgetPasswordCompletedEventHandler forgetPasswordCompleted;
+        public event delete_productCompletedEventHandler delete_productCompleted;
         
         /// <remarks/>
         public event GetDataCompletedEventHandler GetDataCompleted;
@@ -98,133 +98,82 @@ namespace Pharmacy_software.localhost {
         public event GetDataUsingDataContractCompletedEventHandler GetDataUsingDataContractCompleted;
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/Register", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void Register([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password) {
-            this.Invoke("Register", new object[] {
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService/add", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void add([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string type, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string formula, int price, [System.Xml.Serialization.XmlIgnoreAttribute()] bool priceSpecified, int quantity, [System.Xml.Serialization.XmlIgnoreAttribute()] bool quantitySpecified, System.DateTime exp, [System.Xml.Serialization.XmlIgnoreAttribute()] bool expSpecified) {
+            this.Invoke("add", new object[] {
                         name,
-                        password});
+                        type,
+                        formula,
+                        price,
+                        priceSpecified,
+                        quantity,
+                        quantitySpecified,
+                        exp,
+                        expSpecified});
         }
         
         /// <remarks/>
-        public void RegisterAsync(string name, string password) {
-            this.RegisterAsync(name, password, null);
+        public void addAsync(string name, string type, string formula, int price, bool priceSpecified, int quantity, bool quantitySpecified, System.DateTime exp, bool expSpecified) {
+            this.addAsync(name, type, formula, price, priceSpecified, quantity, quantitySpecified, exp, expSpecified, null);
         }
         
         /// <remarks/>
-        public void RegisterAsync(string name, string password, object userState) {
-            if ((this.RegisterOperationCompleted == null)) {
-                this.RegisterOperationCompleted = new System.Threading.SendOrPostCallback(this.OnRegisterOperationCompleted);
+        public void addAsync(string name, string type, string formula, int price, bool priceSpecified, int quantity, bool quantitySpecified, System.DateTime exp, bool expSpecified, object userState) {
+            if ((this.addOperationCompleted == null)) {
+                this.addOperationCompleted = new System.Threading.SendOrPostCallback(this.OnaddOperationCompleted);
             }
-            this.InvokeAsync("Register", new object[] {
+            this.InvokeAsync("add", new object[] {
                         name,
-                        password}, this.RegisterOperationCompleted, userState);
+                        type,
+                        formula,
+                        price,
+                        priceSpecified,
+                        quantity,
+                        quantitySpecified,
+                        exp,
+                        expSpecified}, this.addOperationCompleted, userState);
         }
         
-        private void OnRegisterOperationCompleted(object arg) {
-            if ((this.RegisterCompleted != null)) {
+        private void OnaddOperationCompleted(object arg) {
+            if ((this.addCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.RegisterCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.addCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/login", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void login([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, out bool loginResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool loginResultSpecified) {
-            object[] results = this.Invoke("login", new object[] {
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService/delete_product", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void delete_product([System.Xml.Serialization.XmlElementAttribute(IsNullable = true)] string type, [System.Xml.Serialization.XmlElementAttribute(IsNullable = true)] string name)
+        {
+            this.Invoke("delete_product", new object[] {
                         name,
-                        password});
-            loginResult = ((bool)(results[0]));
-            loginResultSpecified = ((bool)(results[1]));
+                        type});
         }
         
         /// <remarks/>
-        public void loginAsync(string name, string password) {
-            this.loginAsync(name, password, null);
+        public void delete_productAsync(string name, string type) {
+            this.delete_productAsync(name, type, null);
         }
         
         /// <remarks/>
-        public void loginAsync(string name, string password, object userState) {
-            if ((this.loginOperationCompleted == null)) {
-                this.loginOperationCompleted = new System.Threading.SendOrPostCallback(this.OnloginOperationCompleted);
+        public void delete_productAsync(string name, string type, object userState) {
+            if ((this.delete_productOperationCompleted == null)) {
+                this.delete_productOperationCompleted = new System.Threading.SendOrPostCallback(this.Ondelete_productOperationCompleted);
             }
-            this.InvokeAsync("login", new object[] {
+            this.InvokeAsync("delete_product", new object[] {
                         name,
-                        password}, this.loginOperationCompleted, userState);
+                        type}, this.delete_productOperationCompleted, userState);
         }
         
-        private void OnloginOperationCompleted(object arg) {
-            if ((this.loginCompleted != null)) {
+        private void Ondelete_productOperationCompleted(object arg) {
+            if ((this.delete_productCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.loginCompleted(this, new loginCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.delete_productCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/resetPassword", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void resetPassword([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string old_password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string new_password, out bool resetPasswordResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool resetPasswordResultSpecified) {
-            object[] results = this.Invoke("resetPassword", new object[] {
-                        old_password,
-                        new_password});
-            resetPasswordResult = ((bool)(results[0]));
-            resetPasswordResultSpecified = ((bool)(results[1]));
-        }
-        
-        /// <remarks/>
-        public void resetPasswordAsync(string old_password, string new_password) {
-            this.resetPasswordAsync(old_password, new_password, null);
-        }
-        
-        /// <remarks/>
-        public void resetPasswordAsync(string old_password, string new_password, object userState) {
-            if ((this.resetPasswordOperationCompleted == null)) {
-                this.resetPasswordOperationCompleted = new System.Threading.SendOrPostCallback(this.OnresetPasswordOperationCompleted);
-            }
-            this.InvokeAsync("resetPassword", new object[] {
-                        old_password,
-                        new_password}, this.resetPasswordOperationCompleted, userState);
-        }
-        
-        private void OnresetPasswordOperationCompleted(object arg) {
-            if ((this.resetPasswordCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.resetPasswordCompleted(this, new resetPasswordCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/forgetPassword", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void forgetPassword([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string new_password, out bool forgetPasswordResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool forgetPasswordResultSpecified) {
-            object[] results = this.Invoke("forgetPassword", new object[] {
-                        name,
-                        new_password});
-            forgetPasswordResult = ((bool)(results[0]));
-            forgetPasswordResultSpecified = ((bool)(results[1]));
-        }
-        
-        /// <remarks/>
-        public void forgetPasswordAsync(string name, string new_password) {
-            this.forgetPasswordAsync(name, new_password, null);
-        }
-        
-        /// <remarks/>
-        public void forgetPasswordAsync(string name, string new_password, object userState) {
-            if ((this.forgetPasswordOperationCompleted == null)) {
-                this.forgetPasswordOperationCompleted = new System.Threading.SendOrPostCallback(this.OnforgetPasswordOperationCompleted);
-            }
-            this.InvokeAsync("forgetPassword", new object[] {
-                        name,
-                        new_password}, this.forgetPasswordOperationCompleted, userState);
-        }
-        
-        private void OnforgetPasswordOperationCompleted(object arg) {
-            if ((this.forgetPasswordCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.forgetPasswordCompleted(this, new forgetPasswordCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string GetData(int value, [System.Xml.Serialization.XmlIgnoreAttribute()] bool valueSpecified) {
             object[] results = this.Invoke("GetData", new object[] {
@@ -256,7 +205,7 @@ namespace Pharmacy_software.localhost {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/GetDataUsingDataContract", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService/GetDataUsingDataContract", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public CompositeType GetDataUsingDataContract([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] CompositeType composite) {
             object[] results = this.Invoke("GetDataUsingDataContract", new object[] {
@@ -305,7 +254,7 @@ namespace Pharmacy_software.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -353,109 +302,11 @@ namespace Pharmacy_software.localhost {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
-    public delegate void RegisterCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    public delegate void addCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
-    public delegate void loginCompletedEventHandler(object sender, loginCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class loginCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal loginCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool loginResult {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public bool loginResultSpecified {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
-    public delegate void resetPasswordCompletedEventHandler(object sender, resetPasswordCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class resetPasswordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal resetPasswordCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool resetPasswordResult {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public bool resetPasswordResultSpecified {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[1]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
-    public delegate void forgetPasswordCompletedEventHandler(object sender, forgetPasswordCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class forgetPasswordCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal forgetPasswordCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public bool forgetPasswordResult {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-        
-        /// <remarks/>
-        public bool forgetPasswordResultSpecified {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[1]));
-            }
-        }
-    }
+    public delegate void delete_productCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]

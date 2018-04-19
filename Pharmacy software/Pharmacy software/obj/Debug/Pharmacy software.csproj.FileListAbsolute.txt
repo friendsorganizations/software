@@ -1,17 +1,54 @@
-E:\Help_out-master\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe.config
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csprojResolveAssemblyReference.cache
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.change_passwrd.resources
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Forget_passwrd.resources
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Form1.resources
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Login.resources
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Properties.Resources.resources
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Register.resources
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.stock.resources
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csproj.GenerateResource.Cache
-E:\Help_out-master\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe
-E:\Help_out-master\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.pdb
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.exe
-E:\Help_out-master\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.pdb
-C:\Users\Muhammad Iqbal\Desktop\Github\software\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe.config
-C:\Users\Muhammad Iqbal\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.exe
-C:\Users\Muhammad Iqbal\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.pdb
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe.config
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.pdb
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csprojResolveAssemblyReference.cache
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Form1.resources
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Properties.Resources.resources
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csproj.GenerateResource.Cache
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.exe
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.pdb
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.change_passwrd.resources
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Login.resources
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Forget_passwrd.resources
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Sell_product.resources
+C:\Users\NUMAN\Desktop\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.stock.resources
+C:\Users\NUMAN\Desktop\Pharmacy project\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe.config
+C:\Users\NUMAN\Desktop\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.exe
+C:\Users\NUMAN\Desktop\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.pdb
+E:\Pharmacy project\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe.config
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.exe
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.pdb
+E:\Pharmacy project\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe
+E:\Pharmacy project\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.pdb
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csprojResolveAssemblyReference.cache
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.change_passwrd.resources
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Forget_passwrd.resources
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Form1.resources
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Login.resources
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Properties.Resources.resources
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Sell_product.resources
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.stock.resources
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csproj.GenerateResource.Cache
+E:\Pharmacy project\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.receipt.resources
+E:\Pharmacy software\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe.config
+E:\Pharmacy software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.exe
+E:\Pharmacy software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.pdb
+E:\Pharmacy software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csprojResolveAssemblyReference.cache
+E:\Pharmacy software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Form1.resources
+E:\Pharmacy software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Login.resources
+E:\Pharmacy software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Properties.Resources.resources
+E:\Pharmacy software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.stock.resources
+E:\Pharmacy software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csproj.GenerateResource.Cache
+E:\Pharmacy software\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe
+E:\Pharmacy software\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.pdb
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe.config
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.exe
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.pdb
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.exe
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\bin\Debug\Pharmacy software.pdb
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csprojResolveAssemblyReference.cache
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Form1.resources
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Login.resources
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.Properties.Resources.resources
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy_software.stock.resources
+C:\Users\NUMAN\Desktop\Github\software\Pharmacy software\Pharmacy software\obj\Debug\Pharmacy software.csproj.GenerateResource.Cache
